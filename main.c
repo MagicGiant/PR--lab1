@@ -9,17 +9,17 @@ int errors(int argc, char argv[], char way[])
 	FILE* file = fopen(way, "r");
 	if (argc != 3)
 	{
-		printf("Ошибка! Аргументов должно быть 2!");
+		printf("РћС€РёР±РєР°! РђСЂРіСѓРјРµРЅС‚РѕРІ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ 2!");
 		return 1;
 	}
 	if (strcmp(argv, "-c") != 0 && strcmp(argv, "--bytes") != 0 && strcmp(argv, "-w") != 0 && strcmp(argv, "--words") != 0 && strcmp(argv, "-l") != 0 && strcmp(argv, "--lines") != 0 )
 	{
-		printf("Ошибка! Введены не правильные аргументы");
+		printf("РћС€РёР±РєР°! Р’РІРµРґРµРЅС‹ РЅРµРїСЂР°РІРёР»СЊРЅС‹Рµ Р°СЂРіСѓРјРµРЅС‚С‹!");
 		return 1;
 	}
 	if (!file)
 	{
-		printf("Ошибка! Файл не найден.");
+		printf("РћС€РёР±РєР°! РќРµРїСЂР°РІРёР»СЊРЅРѕ РІРІРµРґС‘РЅ РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ.");
 		return 1;
 	}
 	return 0;
